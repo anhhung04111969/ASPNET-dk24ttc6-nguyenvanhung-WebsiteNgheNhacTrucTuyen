@@ -1,0 +1,485 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="MusicWeb.Master" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("Picture/backgroundBig.jpg");
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    box-shadow: #FFC0CB 5px 10px 20px 0;
+    padding: 0 20px;
+}
+
+header #head1{
+    margin-top: 8px;
+    float: left;
+    width: 140px;
+    height: 50px;
+}
+
+header #head2{
+    float: right;
+    width: 260px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+header #logo{
+    width: 100%;
+    height: 100%;
+}
+
+#head2 #info{
+    width: 60%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#head2 #Log{
+    float: right;
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+#info #avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#showName{
+    font-size: 18px;
+    color: black;
+}
+
+#Log img{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#Log #Out_In{
+    min-height: 50px;
+    padding: 3px;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 10%;
+    background: white;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#Out_In .down{
+    background: white;
+    border: none;
+    padding: 6px 10px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+#Log:hover #Out_In{
+    display: block;
+}
+
+#Log .down:hover{
+    background: pink;
+}
+
+#main{
+    width: 22%;
+    float: left;
+    padding: 20px 10px 20px 20px;
+    min-height: calc(100vh - 140px);
+}
+
+#main h4{
+    margin-left: 0;
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+.menu-list{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.music{
+    width: 100%;
+    min-height: 50px;
+    list-style: none;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.music img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-left: 0;
+    flex-shrink: 0;
+}
+
+.fas{
+    color: black;
+    font-size: 30px;
+}
+
+.music a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    line-height: 1.4;
+}
+
+.music #dropDown{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.music #dropDown_content{
+    border-radius: 10%;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    margin-top: 8px;
+    height: auto;
+    font-size: 15px;
+    box-shadow: rgba(0,0,0,0.2) 0 8px 16px 0;
+    z-index: 1000;
+}
+
+.music #dropDown_content p{
+    color: black;
+    padding: 10px 16px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+
+#dropDown:hover #dropDown_content{
+    display: block;
+}
+
+#dropDown_content p:hover{
+    background-color: pink;
+    transition-delay: 0.2s;
+}
+
+#main #UpSong{
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.3) 2px 2px 20px 0;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    border: solid black 1px;
+    background-color: white;
+}
+
+#main #UpSong:hover{
+    color: white;
+    background-color: hotpink;
+}
+
+#main #id_user{
+    display: none;
+}
+
+#content{
+    width: 78%;
+    min-height: calc(100vh - 140px);
+    float: right;
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 12px 0 0 12px;
+}
+
+#content::-webkit-scrollbar{
+    display: none;
+}
+
+#playMusic{
+    width: 100%;
+    height: 70px;
+    float: right;
+    background-image: url("/Picture/backgroud.jpg");
+    box-shadow: #FFC0CB 5px 5px 20px 0;
+    clear: both;
+}
+
+#audio{
+    width: 60%;
+    float: right;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+#show{
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+#musicDisc{
+    width: 55px;
+    height: 55px;
+    border: none;
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+    animation-name: spin_around;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spin_around{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#musicDisc img{
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: solid black 2px;
+    border-radius: 50%;
+}
+
+#musicInfo{
+    margin-top: 15px;
+    width: 175px;
+    height: 80%;
+    float: right;
+    color: white;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    header{
+        height: auto;
+        padding: 10px;
+    }
+
+    #head1{
+        width: 120px;
+    }
+
+    #head2{
+        width: 180px;
+        height: 50px;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    #head2 #info{
+        width: 70%;
+        margin-left: 0;
+    }
+
+    #head2 #Log{
+        width: 30%;
+    }
+
+    #main{
+        width: 100%;
+        min-height: auto;
+        padding: 15px 10px;
+    }
+
+    #content{
+        width: 100%;
+        min-height: auto;
+        padding: 20px 15px;
+        border-radius: 0;
+    }
+
+    #main h4{
+        font-size: 18px;
+    }
+
+    .music{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .music img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .music a{
+        font-size: 16px;
+    }
+
+    .music #dropDown_content{
+        width: 130px;
+        position: absolute;
+    }
+
+    #playMusic{
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #playMusic #musicInfo{
+        display: none;
+    }
+
+    #playMusic #show{
+        float: left;
+        width: 30%;
+    }
+
+    #playMusic #audio{
+        width: 70%;
+        float: right;
+        padding: 10px 10px 0 0;
+        margin-top: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <form id="formMaster" runat="server">
+        <header>
+            <div id="head1">
+                <img id="logo" src="Picture/logoHL.png" alt="Logo" />
+            </div>
+
+            <div id="head2">
+                <div id="info">
+                    <a href="ChangeAvt.aspx">
+                        <asp:Image ID="avatar" runat="server" ImageUrl="Picture/avt_user.jpg" />
+                    </a>
+                    <asp:Label ID="showName" runat="server" Text="User"></asp:Label>
+                </div>
+
+                <div id="Log">
+                    <img class="fas" src="Picture/down_icon.png" alt="Menu" />
+                    <div id="Out_In">
+                        <asp:Button ID="btnLogin" CssClass="down" runat="server" Text="Log In" OnClick="Log_In" />
+                        <asp:Button ID="btnLogout" CssClass="down" runat="server" Text="Log Out" OnClick="Log_Out" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <h4>MUSIC:</h4>
+            <ul class="menu-list">
+                <li class="music">
+                    <img class="fas" src="Picture/music_icon.png" alt="Songs" />
+                    <a href="HomePage.aspx">Songs</a>
+                </li>
+
+                <li class="music">
+                    <img class="fas" src="Picture/album_icon.png" alt="Albums" />
+                    <div id="dropDown">
+                        <a id="clickDropDown" href="javascript:void(0);">Albums</a>
+                        <div id="dropDown_content">
+                            <p onclick="setShowAlbum('V-POP')">V-POP</p>
+                            <p onclick="setShowAlbum('K-POP')">K-POP</p>
+                            <p onclick="setShowAlbum('J-POP')">J-POP</p>
+                            <p onclick="setShowAlbum('US-UK')">US-UK</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <h4>YOUR PLAYLISTS:</h4>
+            <ul class="menu-list">
+                <li class="music">
+                    <img class="fas" src="Picture/yoursong_icon.png" alt="Your songs" />
+                    <a href="YourSong.aspx">Your songs</a>
+                </li>
+
+                <li class="music">
+                    <img class="fas" src="Picture/upload_icon.png" alt="Upload song" />
+                    <a href="UpLoadMusic.aspx">Upload Song</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div id="playMusic">
+            <div id="show">
+                <div id="musicDisc">
+                    <img id="showI" src="Picture/logoMusic.jpg" alt="Now playing" />
+                </div>
+                <div id="musicInfo">
+                    <b id="showN"></b><br />
+                    <i id="showS"></i>
+                </div>
+            </div>
+
+            <audio id="audio" preload="auto" autoplay loop controls>
+                <source src="a.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </form>
+
+    <script>
+        function setShowAlbum(nameAlbum) {
+            var listSong = document.getElementsByClassName("musicSong");
+            for (var i = 0; i < listSong.length; i++) {
+                if (listSong[i].getElementsByTagName('i')[0].innerText != '(' + nameAlbum + ')') {
+                    listSong[i].style.display = "none";
+                } else {
+                    listSong[i].style.display = "block";
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

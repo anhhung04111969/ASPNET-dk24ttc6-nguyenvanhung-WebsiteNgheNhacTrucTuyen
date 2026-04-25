@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<ArrayOfMusics xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Musics>
+    <IdMusic>312878</IdMusic>
+    <NameMusic>Như Lời Đồn</NameMusic>
+    <Mp3Url>/Photos/files/Nhu-Loi-Don-Bao-Anh.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/BaoAnh_NhuLoiDon.jpg</ImgUrl>
+    <SingerName>Bảo Anh</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>820413</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>550938</IdMusic>
+    <NameMusic>That Girl</NameMusic>
+    <Mp3Url>/Photos/files/vietsub_kara_that_girl_olly_murs_lyrics_tik_tok.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/OnlyMurs_ThatGirl.jpg</ImgUrl>
+    <SingerName>Only Murs</SingerName>
+    <Time1 />
+    <Album>US-UK</Album>
+    <IdUser>820413</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>877215</IdMusic>
+    <NameMusic>Đi Du Đưa Đi</NameMusic>
+    <Mp3Url>/Photos/files/DiDuDuaDiRemix-BichPhuong-6061120.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/bichphuong_diduduadi.jpg</ImgUrl>
+    <SingerName>Bích Phương</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>820413</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>577348</IdMusic>
+    <NameMusic>Em Ơi Lên Phố</NameMusic>
+    <Mp3Url>/Photos/files/Em-Oi-Len-Pho-Minh-Vuong-M4U.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/emoilenpho_MinhVuongM4U.jpg</ImgUrl>
+    <SingerName>Minh Vương M4U</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>820413</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>373220</IdMusic>
+    <NameMusic>Simple Love</NameMusic>
+    <Mp3Url>/Photos/files/Simple-Love-Obito-Seachains-Davis.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/SimpleLove_Obito_Seachains_Davis.jpg</ImgUrl>
+    <SingerName>Obito &amp; Seachains &amp; Davis</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>820413</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>513108</IdMusic>
+    <NameMusic>Fancy</NameMusic>
+    <Mp3Url>/Photos/files/Fancy-TWICE-5946557.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/Twice_Fancy.jpg</ImgUrl>
+    <SingerName>TWICE</SingerName>
+    <Time1 />
+    <Album>K-POP</Album>
+    <IdUser>820413</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>898618</IdMusic>
+    <NameMusic>Love Again</NameMusic>
+    <Mp3Url>/Photos/files/LoveAgain-NCTDream-6269018.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/NCTDream_LoveAgain.jpg</ImgUrl>
+    <SingerName>NCT Dream</SingerName>
+    <Time1 />
+    <Album>K-POP</Album>
+    <IdUser>901704</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>548935</IdMusic>
+    <NameMusic>Hai Phút Hơn</NameMusic>
+    <Mp3Url>/Photos/files/Hai-Phut-Hon-Phao-CM1X.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/Phao_CM1X_HaiPhutHon.jpg</ImgUrl>
+    <SingerName>Pháo &amp; CM1X</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>901704</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>842526</IdMusic>
+    <NameMusic>Fire</NameMusic>
+    <Mp3Url>/Photos/files/Fire-BTSBangtanBoys-4428076.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/BTS_Fire.jpg</ImgUrl>
+    <SingerName>BTS</SingerName>
+    <Time1 />
+    <Album>K-POP</Album>
+    <IdUser>901704</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>685051</IdMusic>
+    <NameMusic>So Far Away</NameMusic>
+    <Mp3Url>/Photos/files/vietsub_lyrics_so_far_away_adam_christopher_martin_garrix_david_guetta_acoustic_version.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/SoFarAway_Martin_David.jpg</ImgUrl>
+    <SingerName>Martin Garrix &amp; David Guetta</SingerName>
+    <Time1 />
+    <Album>US-UK</Album>
+    <IdUser>901704</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>603159</IdMusic>
+    <NameMusic>Hồng Nhan</NameMusic>
+    <Mp3Url>/Photos/files/Hong-Nhan-Jack.mp3</Mp3Url>
+    <ImgUrl>/Photos/images/Jack_HongNhan.jpg</ImgUrl>
+    <SingerName>Jack</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>901704</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>789319</IdMusic>
+    <NameMusic>Ghen Cô-Vy</NameMusic>
+    <Mp3Url>/Photos/files/GhenCoVy20-KhacHungSAMBI-6239910.mp3</Mp3Url>
+    <ImgUrl>/Picture/logoMusic.jpg</ImgUrl>
+    <SingerName>Khắc Hưng &amp; SamBi</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>901704</IdUser>
+  </Musics>
+  <Musics>
+    <IdMusic>695805</IdMusic>
+    <NameMusic>Quoc Ca</NameMusic>
+    <Mp3Url>/Photos/files/tien-quan-ca%20(2).mp3</Mp3Url>
+    <ImgUrl>/Photos/images/song-tien-quan-ca.jpg</ImgUrl>
+    <SingerName>Van Cao</SingerName>
+    <Time1 />
+    <Album>V-POP</Album>
+    <IdUser>Nguyễn Hùng</IdUser>
+  </Musics>
+</ArrayOfMusics>

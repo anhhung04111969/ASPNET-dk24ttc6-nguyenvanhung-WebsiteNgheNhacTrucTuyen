@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+
+	<user>
+		<id>901704</id>
+		<username>admin</username>
+		<password>123</password>
+		<email>admin@gmail.com</email>
+		<avatar>/Photos/images/meomeo.jpg</avatar>
+	</user>
+
+	<user>
+		<id>455996</id>
+		<username>user</username>
+		<password>123</password>
+		<email>hung@gmail.com</email>
+		<avatar>/Photos/images/gaogao.jpg</avatar>
+	</user>
+
+	<user>
+		<id>853844</id>
+		<username>test</username>
+		<password>123</password>
+		<email>test@gmail.com</email>
+		<avatar>/Picture/avt_user.jpg</avatar>
+	</user>
+
+</users>
